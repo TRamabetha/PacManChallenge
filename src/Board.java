@@ -153,13 +153,13 @@ public class Board extends JPanel implements ActionListener {
         graphcs2d.setColor(Color.white);
         graphcs2d.drawRect(50, SCREEN_SIZE / 2 - 30, SCREEN_SIZE - 100, 50);
 
-        String s = "Press s to start.";
-        Font small = new Font("Helvetica", Font.BOLD, 14);
+        String message = "Press enter to start.";
+        Font small = new Font("Arial", Font.BOLD, 14);
         FontMetrics metr = this.getFontMetrics(small);
 
         graphcs2d.setColor(Color.white);
         graphcs2d.setFont(small);
-        graphcs2d.drawString(s, (SCREEN_SIZE - metr.stringWidth(s)) / 2, SCREEN_SIZE / 2);
+        graphcs2d.drawString(message, (SCREEN_SIZE - metr.stringWidth(message)) / 2, SCREEN_SIZE / 2);
     }
 
     private void drawScore(Graphics2D graphcs2d) {

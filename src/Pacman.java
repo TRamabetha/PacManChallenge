@@ -2,6 +2,7 @@
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
+@SuppressWarnings("serial")
 public class Pacman extends JFrame {
 
     public Pacman() {
